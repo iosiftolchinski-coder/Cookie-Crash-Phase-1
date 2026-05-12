@@ -1,27 +1,27 @@
 public class Cookies {
     int CookiesCount = 0;
     int CookierClick = 1;
-    int UpgradePurchases = 0;
-    int UpgradeCost = 100;
+    int NewPurchases = 0;
+    int NewCost = 100;
 
     public int getCookiesCount(){return CookiesCount;}
     public int getCookierClick(){return CookierClick;}
-    public int getUpgradePurchases(){return UpgradePurchases;}
+    public int getNewPurchases(){return NewPurchases;}
 
     public void Click(){
         CookiesCount+= CookierClick;
     }
 
-    public int getUpgradeCost(){
+    public int getNewCost(){
         //100(cost)*(1.100)^(how many times purchased)
-        return (int) Math.round(Cost*Math.pow(1.100,UpgradePurchases));
+        return (int) Math.round(Cost*Math.pow(1.100,NewPurchases));
     }
 
-    public boolean buyUpgrade(){
-        int Upgradecost = getUpgradeCost();
-        if(CookiesCount>=Upgradecost){
-            CookiesCount-=Upgradecost;
-            UpgradePurchases++;
+    public boolean buyNew(){
+        int Newcost = getNewCost();
+        if(CookiesCount>=Newcost){
+            CookiesCount-=Newcost;
+            NewPurchases++;
             CookierClick++;
             return true;
         }
