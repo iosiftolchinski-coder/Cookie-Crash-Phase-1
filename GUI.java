@@ -12,7 +12,7 @@ public class GUI implements ActionListener {
     JButton Button;
     JPanel panel;
     JLabel CountLabel;
-    ImageIcon Icon = new ImageIcon("Cookies.png");
+    Image Icon = new Image("Cookies.png");
 
     public GUI() {
         frame = new JFrame("COOKI COOKI");
