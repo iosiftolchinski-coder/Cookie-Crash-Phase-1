@@ -20,7 +20,7 @@ public class GUI implements ActionListener {
         CButton.setPreferredSize(new Dimension(500,500));
         CButton.addActionListener(e -> {
             logic.Click();
-            LabelLabel();
+            Label();
         });
         Button = new JButton("Price for Upgrade "+logic.getcost());
         Button.addActionListener(e -> {
