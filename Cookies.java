@@ -13,7 +13,7 @@ public class Cookies {
     }
 
     public int getNewCost(){
-        //100(cost)*(1.100)^(how many times purchased)
+        100(cost)*(1.100)^(how many times purchased)
         return (int) Math.round(Cost*Math.pow(1.100,NewPurchases));
     }
 
